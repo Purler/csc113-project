@@ -14,20 +14,8 @@ public class Customer {
 		return name;
 	}
 
-	public String getAddress() {
-		return address;
-	}
-
 	public ShoppingCart getShoppingCart() {
 		return shoppingCart;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
 	}
 	
 	public String toString() {

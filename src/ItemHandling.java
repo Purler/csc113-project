@@ -4,7 +4,7 @@ public class ItemHandling {
 	protected int itemCount;
 	
 	public boolean addItem(Product product) {
-		if(isFull()) {
+		if(spaceAvailable()) {
 			items[itemCount] = product;
 			itemCount++;
 			return true;
@@ -38,7 +38,7 @@ public class ItemHandling {
 			System.out.println("Item #" + (i+1) + ": \n"+ items[i]);
 	}
 	
-	public boolean isFull() {
+	public boolean spaceAvailable() {
 		return itemCount < items.length;
 	}
 	

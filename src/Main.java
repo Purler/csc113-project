@@ -159,7 +159,7 @@ public class Main {
 			read.nextLine();
 			
 			if(choice == 1) {
-				if(inventory.isFull()) {
+				if(inventory.spaceAvailable()) {
 					System.out.println("Is it food or nonfood: ");
 					String type = read.nextLine();
 					boolean isFood = false;

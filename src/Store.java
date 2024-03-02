@@ -98,7 +98,7 @@ public class Store {
 			if(!customerSelected) {
 				System.out.println("Enter the customer name (or 'B' to go back): ");
 				customerName = read.nextLine();
-				customerSelected = true;
+				
 			}
 			
 			if(customerName.equalsIgnoreCase("B")) {
@@ -111,6 +111,7 @@ public class Store {
 			if(index == -1)
 				System.out.println("Customer Not Found!");
 			else {
+				customerSelected = true;
 				displayCartMenu();
 				
 				Customer customer = customerList[index];

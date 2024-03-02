@@ -98,7 +98,6 @@ public class Store {
 			if(!customerSelected) {
 				System.out.println("Enter the customer name (or 'B' to go back): ");
 				customerName = read.nextLine();
-				
 			}
 			
 			if(customerName.equalsIgnoreCase("B")) {
@@ -122,6 +121,8 @@ public class Store {
 				read.nextLine();
 				
 				if(choice == 1) {
+					inventory.viewNames();
+					
 					System.out.print("Enter the name of the product you want to add to cart: ");
 					String productName = read.nextLine();
 					

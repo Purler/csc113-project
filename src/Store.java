@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Store {
 	
 	private static Scanner read = new Scanner(System.in);
 	private static Customer[] customerList = new Customer[50];
@@ -24,6 +24,8 @@ public class Main {
 			case 1: customerHandling(); break;
 			case 2: cartOperations(); break;
 			case 3: inventoryHandling(); break;
+			case 4: wantsExit = true; break;
+			default: System.out.println("Invalid Input!"); break;
 			}
 		}
 	}
